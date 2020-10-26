@@ -1,15 +1,15 @@
-var gulp = require('gulp');
-var cassnano = require('gulp-cssnano');
-var sass = require('gulp-sass');
+import { task, src, dest, watch, series } from 'gulp';
+//import cassnano from 'gulp-cssnano';
+import sass from 'gulp-sass';
 
-gulp.task('sass',function(){
-    return gulp.src('app/style.scss')
+task('sass',function(){
+    return src('app/style.scss')
     .pipe(sass())
-    .pipe(gulp.dest('dist/css'));
+    .pipe(dest('dist/css'));
 });
 
-gulp.task('watch',function(){
-    gulp.watch('./app/*.scss',gulp.series('sass'));
+task('watch',function(){
+    watch('./app/*.scss',series('sass'));
     
-    gulp.watch('app/js/**/*.js',gulp.series('js'));
+    watch('app/js/**/*.js',series('js'));
 });
