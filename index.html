@@ -21,9 +21,132 @@
     </head>
     <body>
         <div class="container">
-            <header></header>
-            <form id="survey-form ">
+            <header>
+                <h2>Reading Habbit Survey</h2>
+                <h4></h4>
+            </header>
+            <form id="survey-form">
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input type="text" placeholder="Enter your name" name="name" class="control" required>
+                </div>
+                <div class="field">
+                    <label for="name">Email</label>
+                    <input type="email" placeholder="Enter your email" name="email" class="control" required >
+                </div>
+                <div class="field">
+                    <label for="name">Age
+                        <span class="optional">(Optional)</span>
+                    </label>
+                    <input type="number" placeholder="Age" name="age" min="1" max="99" class="control">
+                </div>
+                <div class="field">
+                    <p>Gender</p>
+                    <label>
+                        <input type="radio" name="female"  value="female"class="control-radio">Female
+                    </label>
+                    <label>
+                        <input type="radio" name="male"  value="male"class="control-radio">Male
+                    </label>
+                </div>
+                <div class="field">
+                    <p>How much do you enjoy reading?</p>
+                    <label>
+                        <input type="radio" name="readability"  value="very-much" class="control-radio">Very munch
+                    </label>
+                    <label>
+                        <input type="radio" name="readability"  value="enjoyable" class="control-radio">Enjoyable
+                    </label>
+                    <label>
+                        <input type="radio" name="readability"  value="just-okay" class="control-radio">Just okay
+                    </label>
+                    <label>
+                        <input type="radio" name="readability"  value="not-at-all" class="control-radio">Not at all
+                    </label>
+                    <label>
+                        <input type="radio" name="readability"  value="my-choice" class="control-radio">Only when its my choice
+                    </label>
+                </div>
+                <div class="field">
+                    <p>What do you choose to read? <br> Check all choices that apply to you</p>
+                    <label>
+                        <input type="checkbox" name="choice"  value="printbook" class="control-check">Print Book
+                    </label>
+                    <label>
+                        <input type="checkbox" name="choice"  value="e-book" class="control-check">E Book
+                    </label>
+                    <label>
+                        <input type="checkbox" name="choice"  value="magazines" class="control-check">Magazines
+                    </label>
+                    <label>
+                        <input type="checkbox" name="choice"  value="newspapers" class="control-check">Newspapers
+                    </label>
+                    <label>
+                        <input type="checkbox" name="choice"  value="websites" class="control-check">Websites
+                    </label>
+                    <label>
+                        <input type="checkbox" name="choice"  value="nothing" class="control-check">Nothing
+                    </label>
+
+                </div>
+                <div class="field">
+                    <p>Do you prefer fiction or nonfiction?</p>
+                    <label>
+                        <input type="radio" name="preference"  value="fiction" class="control-radio">Fiction
+                    </label>
+                    <label>
+                        <input type="radio" name="preference"  value="nonfiction" class="control-radio">Non-Fiction
+                    </label>
+                </div>
+                <div class="field">
+                    <p>What reading format do you prefer?<br> Please rank using the drop down menu next to each choice.</p>
+                    
+                    <select name="print" id="print">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                    <label for="print">Print Book</label>
+                    <select name="e-reader" id="e-reader">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                      <label for="e-reader">E-Reader</label>
+                      <select name="computer" id="computer">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                      <label for="computer">Computer</label>
+                      <select name="tablet" id="tablet">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                      <label for="tablet">Tablet</label>
+                      <select name="mobile" id="mobile">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                      <label for="mobile">Mobile</label>
                 
+                </div>
+                <div class="field">
+                    <button class="submit">Submit</button>
+                </div>
+
             </form>
         </div>
         
