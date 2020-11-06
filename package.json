@@ -1,6 +1,7 @@
 {
   "name": "survey-project",
   "version": "1.0.0",
+  "type": "module",
   "description": "Create a survey about reading choices",
   "main": "index.js",
   "scripts": {
